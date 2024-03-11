@@ -6,6 +6,8 @@ Este proyecto consiste en una billetera digital que ofrece diversas funcionalida
   Dando la bienvenida a Alke Wallet. Y redirecionando a la pantalla de login.html    para iniciar sesión como principal.
 
 - Pantalla de Inicio de Sesión (login.html):
+# Usuario:  jaime@example.com
+# Password: 12345
   Permite a los usuarios iniciar sesión utilizando su correo electrónico y contraseña.
   Implementa la validación de credenciales utilizando JavaScript.
   Redirige a la pantalla del menú principal después de iniciar sesión correctamente.

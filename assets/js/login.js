@@ -17,7 +17,7 @@ $(document).ready(function () {
 		}
 
 		// Simulate login (Replace with your actual login logic)
-		if (email === 'example@example.com' && password === 'password') {
+		if (email === 'jaime@example.com' && password === '12345') {
 			// Redirect to main menu
 			window.location.href = 'menu.html';
 		} else {

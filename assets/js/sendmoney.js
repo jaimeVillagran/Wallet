@@ -14,15 +14,13 @@ $(document).ready(function () {
 		contactList.empty(); // Limpiamos la lista
 
 		contacts
-			.filter(
-				(contact) =>
-					contact.name.toLowerCase().includes(filter.toLowerCase()) ||
-					contact.alias.toLowerCase().includes(filter.toLowerCase())
+			.filter((contact) =>
+				contact.name.toLowerCase().includes(filter.toLowerCase())
 			)
 			.forEach((contact) => {
 				const listItem = $('<li>')
 					.addClass('contact-item')
-					.text(`${contact.name} (${contact.alias}) - ${contact.email}`);
+					.text(`${contact.name} - ${contact.email}`);
 				contactList.append(listItem);
 			});
 	}
@@ -47,8 +45,7 @@ $(document).ready(function () {
 			return;
 		}
 		const name = $('#contactName').val();
-		const alias = $('#contactAlias').val();
-		contacts.push({ name, alias, email }); // Agregar nuevo contacto
+		contacts.push({ name, email }); // Agregar nuevo contacto
 		renderContactList(); // Renderizar la lista con el nuevo contacto
 		$('#contactForm').hide(); // Ocultar el formulario
 		alert('Contacto guardado correctamente.'); // Solo como ejemplo
